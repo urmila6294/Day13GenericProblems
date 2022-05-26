@@ -35,5 +35,23 @@ public class Comparison {
 
         System.out.println("Maximum Float Number:" + max);
     }
+    public static void maximumString()
+    {
+        String str1, str2, str3;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter First String Number:");
+        str1 = sc.next();
+        System.out.println("Enter Second String Number:");
+        str2 = sc.next();
+        System.out.println("Enter Third String Number:");
+        str3 = sc.next();
+        String max = str1;
+        if (str2.compareTo(max) > 0)
+            max = str2;
+        if (str3.compareTo(max) > 0)
+            max = str3;
+
+        System.out.println("Maximum String Number:" + max);
+    }
 }
 
